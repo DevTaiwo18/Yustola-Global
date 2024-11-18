@@ -57,7 +57,7 @@ const Header = () => {
         {/* Toggle button for mobile view */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-gray-800 text-2xl focus:outline-none p-2 transition duration-300"
+          className="lg:hidden text-gray-800 text-3xl focus:outline-none p-2 transition duration-300"
         >
           ☰
         </button>
