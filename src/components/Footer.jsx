@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { GoLocation } from 'react-icons/go';
+import Logo from './../assets/Full White.png';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear(); // Automatically gets the current year
@@ -11,7 +12,7 @@ const Footer = () => {
 
                 {/* Left Column - Logo and Description */}
                 <div className="flex flex-col items-start space-y-4">
-                    <img src="/src/assets/Full White.png" alt="Yustola Global Logo" className="h-12 md:h-10" /> {/* Smaller logo */}
+                    <img src={Logo} alt="Yustola Global Logo" className="h-12 md:h-10" /> {/* Smaller logo */}
                     <p className="text-gray-400 text-sm leading-relaxed">
                         At Yustola Global, we provide top-tier travel services, specializing in visa support, flight booking, and hotel accommodations for clients worldwide.
                     </p>
