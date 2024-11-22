@@ -48,7 +48,7 @@ const Header = () => {
       </div>
 
       {/* Logo and Navigation */}
-      <div className="max-w-[89%] mx-auto flex justify-between items-center py-4 relative">
+      <div className="max-w-[85%] mx-auto flex justify-between items-center py-4 relative">
         {/* Logo */}
         <Link to="/" onClick={closeMenu}>
           <img src={Logo} alt="Yustola Global Logo" className="h-10" />
