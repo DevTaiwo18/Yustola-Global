@@ -1,31 +1,53 @@
+// src/pages/Home.jsx
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom'; // Importing Link for navigation
+import Herosection from './../assets/29cca-slider-5.jpg';
 
 const Home = () => {
   return (
-    <div className="max-w-[85%] mx-auto py-12 text-gray-800 leading-relaxed">
+    <div>
       <Helmet>
         <title>Home | Yustola Global</title>
         <meta name="description" content="Welcome to Yustola Global - Your trusted travel and tour partner." />
       </Helmet>
-      
-      {/* Title */}
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-700 text-center mb-6 md:mb-8">
-        Welcome to Yustola Global
-      </h1>
 
-      {/* Paragraph */}
-      <p className="text-base md:text-lg lg:text-xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda illo deleniti distinctio asperiores dignissimos quia ipsa. Minima veniam iure veritatis amet sit reprehenderit saepe quis dicta velit, rerum nulla totam soluta inventore dolor repellat quaerat ratione! Tempora, ut enim minima voluptate excepturi, quia libero aspernatur modi sed natus quibusdam maxime! Cum doloremque fuga ipsum commodi ipsam, voluptatem deserunt.
-      </p>
-      
-      <p className="text-base md:text-lg lg:text-xl mt-4 md:mt-6">
-        Blanditiis illum illo aperiam tempore, quibusdam provident quisquam. Accusantium, voluptates itaque. Qui temporibus quibusdam inventore tenetur eos minima, voluptate, voluptas repudiandae magnam nisi eaque provident, quo voluptatem facere? Pariatur enim consequuntur expedita eligendi alias laboriosam natus deserunt dolorem, necessitatibus doloribus temporibus quo sequi.
-      </p>
+      {/* Hero Section */}
+      <div className="relative w-full h-[80vh] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src={Herosection}
+            alt="Travel Background"
+            className="w-full h-full object-cover opacity-80"
+          />
+        </div>
 
-      <p className="text-base md:text-lg lg:text-xl mt-4 md:mt-6">
-        Quod, earum, quam ipsum ullam ea itaque suscipit numquam iusto eveniet cumque, dolor neque cum assumenda praesentium illum accusamus dolore! Perferendis architecto voluptate ipsa repudiandae esse cum itaque beatae soluta quasi! Corporis fugit similique quisquam doloremque eum necessitatibus cumque explicabo rerum velit sit eveniet magnam sint, quam ratione libero mollitia odit nobis iure.
-      </p>
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-[85%] text-left px-4 md:px-24">
+          <div className="space-y-2">
+            <h2 className="text-2xl md:text-4xl text-white font-medium">
+              Welcome to
+            </h2>
+            <h1 className="text-4xl md:text-6xl font-bold text-red-500">
+              Yustola Global
+            </h1>
+          </div>
+          <p className="text-lg md:text-xl text-gray-200 mt-4">
+            Your trusted travel and tour partner for all destinations.
+            <br />
+            Experience seamless travel solutions tailored for you.
+          </p>
+          <Link to="/contact">
+            <button className="mt-6 px-5 py-2 bg-red-500 text-white rounded-full text-lg font-medium shadow-lg hover:bg-red-600 transition duration-300">
+              Contact Us
+            </button>
+          </Link>
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-transparent to-blue-900 opacity-60"></div>
+      </div>
     </div>
   );
 };
