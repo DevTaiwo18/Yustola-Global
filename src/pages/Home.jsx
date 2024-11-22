@@ -1,12 +1,23 @@
-// src/pages/Home.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom'; // Importing Link for navigation
+import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 import Herosection from './../assets/29cca-slider-5.jpg';
 import { FaBriefcase, FaGraduationCap, FaPlane } from 'react-icons/fa';
 import Ourservice from '../components/Ourservice';
+import Why from '../components/Why';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
     <div>
       <Helmet>
@@ -15,7 +26,10 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[60vh] md:h-[80vh] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white flex items-center justify-center md:justify-start">
+      <div
+        className="relative w-full h-[60vh] md:h-[80vh] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white flex items-center justify-center md:justify-start"
+        data-aos="fade-up"
+      >
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -26,7 +40,7 @@ const Home = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-[85%] text-left md:text-left px-1 md:px-24">
+        <div className="relative z-10 max-w-[85%] text-left px-1 md:px-24">
           <div className="space-y-2">
             <h2 className="text-2xl md:text-4xl text-white font-medium">
               Welcome to
@@ -53,10 +67,12 @@ const Home = () => {
 
       {/* Visa Types Section */}
       <div className="py-10 bg-gray-800 text-gray-300">
-        <div className="max-w-[85%] px-2 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12">
-
+        <div
+          className="max-w-[85%] px-2 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12"
+          data-aos="fade-up"
+        >
           {/* Work Visas */}
-          <div className="space-y-4">
+          <div className="space-y-4" data-aos="zoom-in">
             <div className="flex items-center space-x-4">
               <FaBriefcase className="text-2xl sm:text-3xl text-blue-400" />
               <h3 className="text-sm font-bold text-white">Work Visas</h3>
@@ -67,7 +83,7 @@ const Home = () => {
           </div>
 
           {/* Student Visas */}
-          <div className="space-y-4">
+          <div className="space-y-4" data-aos="zoom-in">
             <div className="flex items-center space-x-4">
               <FaGraduationCap className="text-2xl sm:text-3xl text-green-400" />
               <h3 className="text-sm font-bold text-white">Student Visas</h3>
@@ -78,7 +94,7 @@ const Home = () => {
           </div>
 
           {/* Visit/Tourist Visas */}
-          <div className="space-y-4">
+          <div className="space-y-4" data-aos="zoom-in">
             <div className="flex items-center space-x-4">
               <FaPlane className="text-2xl text-yellow-400" />
               <h3 className="text-sm font-bold text-white">Visit/Tourist Visas</h3>
@@ -91,8 +107,13 @@ const Home = () => {
       </div>
 
       {/* Our service */}
-      <Ourservice />
-  
+      <Ourservice data-aos="fade-right" />
+
+      {/* Why choose us */}
+      <Why data-aos="fade-left" />
+
+      {/* Testimonials */}
+      <Testimonials data-aos="fade-up" />
     </div>
   );
 };
