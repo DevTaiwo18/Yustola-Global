@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React, { useState, useEffect } from 'react';
 import Logo from './../assets/Full Blue (1).png';
 import { Link } from 'react-router-dom';
@@ -6,6 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [animateHeader, setAnimateHeader] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,8 +34,17 @@ const Header = () => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }, [isOpen]);
 
+  // Slide-in animation for the header
+  useEffect(() => {
+    setAnimateHeader(true);
+  }, []);
+
   return (
-    <header className="bg-white font-sans border-b border-gray-200">
+    <header
+      className={`bg-white font-sans border-b border-gray-200 transform transition-transform duration-500 ${
+        animateHeader ? 'translate-y-0' : 'translate-y-[-100%]'
+      }`}
+    >
       {/* Top Contact Bar */}
       <div className="bg-gray-900 text-white text-xs py-3 hidden lg:block">
         <div className="max-w-[85%] mx-auto flex justify-between items-center">
