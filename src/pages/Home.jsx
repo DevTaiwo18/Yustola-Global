@@ -13,7 +13,7 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[70vh] md:h-[80vh] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white flex items-center justify-center md:justify-start">
+      <div className="relative w-full h-[60vh] md:h-[80vh] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white flex items-center justify-center md:justify-start">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
