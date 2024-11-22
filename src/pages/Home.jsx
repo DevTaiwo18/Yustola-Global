@@ -3,6 +3,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom'; // Importing Link for navigation
 import Herosection from './../assets/29cca-slider-5.jpg';
+import { FaBriefcase, FaGraduationCap, FaPlane } from 'react-icons/fa';
+import Ourservice from '../components/Ourservice';
 
 const Home = () => {
   return (
@@ -48,6 +50,49 @@ const Home = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-transparent to-blue-900 opacity-60"></div>
       </div>
+
+      {/* Visa Types Section */}
+      <div className="py-10 bg-gray-800 text-gray-300">
+        <div className="max-w-[85%] px-2 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12">
+
+          {/* Work Visas */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-4">
+              <FaBriefcase className="text-2xl sm:text-3xl text-blue-400" />
+              <h3 className="text-sm font-bold text-white">Work Visas</h3>
+            </div>
+            <p className="text-xs font-semibold leading-relaxed">
+              Unlock career opportunities abroad with a work visa, your gateway to building a professional life in a new country.
+            </p>
+          </div>
+
+          {/* Student Visas */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-4">
+              <FaGraduationCap className="text-2xl sm:text-3xl text-green-400" />
+              <h3 className="text-sm font-bold text-white">Student Visas</h3>
+            </div>
+            <p className="text-xs font-semibold leading-relaxed">
+              Pursue your dreams of studying overseas. A student visa grants you access to world-class education and global opportunities.
+            </p>
+          </div>
+
+          {/* Visit/Tourist Visas */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-4">
+              <FaPlane className="text-2xl text-yellow-400" />
+              <h3 className="text-sm font-bold text-white">Visit/Tourist Visas</h3>
+            </div>
+            <p className="text-xs font-semibold leading-relaxed">
+              Explore new destinations and cultures with ease. A tourist visa opens the door to unforgettable adventures.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Our service */}
+      <Ourservice />
+  
     </div>
   );
 };
