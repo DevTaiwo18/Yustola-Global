@@ -100,8 +100,8 @@ const Header = () => {
                 <Link to="/pricing" onClick={closeMenu} className="text-gray-900 hover:text-blue-700 text-lg font-semibold w-full">
                   Pricing
                 </Link>
-                <Link to="/team" onClick={closeMenu} className="text-gray-900 hover:text-blue-700 text-lg font-semibold w-full">
-                  Our Team
+                <Link to="/faqs" onClick={closeMenu} className="text-gray-900 hover:text-blue-700 text-lg font-semibold w-full">
+                  FAQs
                 </Link>
                 <Link to="/contact" onClick={closeMenu} className="text-gray-900 hover:text-blue-700 text-lg font-semibold w-full">
                   Contact Us
@@ -117,7 +117,7 @@ const Header = () => {
           <Link to="/about" className="text-gray-800 hover:text-blue-700 transition-colors duration-200">About</Link>
           <Link to="/services" className="text-gray-800 hover:text-blue-700 transition-colors duration-200">Services</Link>
           <Link to="/pricing" className="text-gray-800 hover:text-blue-700 transition-colors duration-200">Pricing</Link>
-          <Link to="/team" className="text-gray-800 hover:text-blue-700 transition-colors duration-200">Our Team</Link>
+          <Link to="/faqs" className="text-gray-800 hover:text-blue-700 transition-colors duration-200">FAQs</Link>
           <Link to="/contact" className="text-gray-800 hover:text-blue-700 transition-colors duration-200">Contact Us</Link>
         </nav>
       </div>
