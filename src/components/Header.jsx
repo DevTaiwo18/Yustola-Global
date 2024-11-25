@@ -1,6 +1,6 @@
 // src/components/Header.jsx
 import React, { useState, useEffect } from 'react';
-import Logo from './../assets/Full Blue (1).png';
+import Logo from './../assets/Full Black.png';
 import { Link } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -40,7 +40,7 @@ const Header = () => {
       <div className="bg-gray-900 text-white text-xs py-3 hidden lg:block">
         <div className="max-w-[85%] mx-auto flex justify-between items-center">
           <div className="flex space-x-6">
-            <span>📞 08079851232 | 08119889999</span>
+            <span>📞 08169587914 | 08169587914</span>
             <span>✉️ info@yustolaglobal.com</span>
             <span>📍 USA | Ibadan | Akure | Oshogbo</span>
           </div>

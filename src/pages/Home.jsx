@@ -27,7 +27,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <div
-        className="relative w-full h-[60vh] md:h-[80vh] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white flex items-center justify-center md:justify-start"
+        className="relative w-full h-[60vh] md:h-[80vh] bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800 text-white flex items-center justify-center md:justify-start"
         data-aos="fade-up"
       >
         {/* Background Image */}
@@ -42,28 +42,29 @@ const Home = () => {
         {/* Hero Content */}
         <div className="relative z-10 max-w-[85%] text-left px-1 md:px-24">
           <div className="space-y-2">
-            <h2 className="text-2xl md:text-4xl text-white font-medium">
+            <h2 className="text-2xl md:text-4xl text-gray-200 font-medium">
               Welcome to
             </h2>
-            <h1 className="text-4xl md:text-6xl font-bold text-red-500">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-100">
               Yustola Global
             </h1>
           </div>
-          <p className="text-lg md:text-xl text-gray-200 mt-4">
+          <p className="text-lg md:text-xl text-gray-300 mt-4">
             Your trusted travel and tour partner for all destinations.
             <br />
             Experience seamless travel solutions tailored for you.
           </p>
           <Link to="/contact">
-            <button className="mt-6 px-5 py-2 bg-red-500 text-white rounded-full text-lg font-medium shadow-lg hover:bg-red-600 transition duration-300">
+            <button className="mt-6 px-5 py-2 bg-gray-700 text-white rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition duration-300">
               Contact Us
             </button>
           </Link>
         </div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-transparent to-blue-900 opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-transparent to-gray-900 opacity-60"></div>
       </div>
+
 
       {/* Visa Types Section */}
       <div className="py-10 bg-gray-800 text-gray-300">
