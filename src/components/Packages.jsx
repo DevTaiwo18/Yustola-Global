@@ -75,7 +75,7 @@ const Packages = () => {
           {packages.map((travelPackage, index) => (
             <div
               key={index}
-              className="p-4"
+              className="p-3"
               data-aos="zoom-in"
             >
               <div className="bg-white shadow-lg rounded-lg overflow-hidden">
