@@ -51,13 +51,13 @@ const Header = () => {
       <div className="max-w-[85%] mx-auto flex justify-between items-center py-4 relative">
         {/* Logo */}
         <Link to="/" onClick={closeMenu}>
-          <img src={Logo} alt="Yustola Global Logo" className="h-10" />
+          <img src={Logo} alt="Yustola Global Logo" className="h-11" />
         </Link>
 
         {/* Toggle button for mobile view */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-gray-800 text-3xl focus:outline-none p-2 transition duration-300"
+          className="lg:hidden text-gray-800 text-4xl focus:outline-none p-2 transition duration-300"
         >
           ☰
         </button>

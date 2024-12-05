@@ -8,6 +8,7 @@ import { FaBriefcase, FaGraduationCap, FaPlane } from 'react-icons/fa';
 import Ourservice from '../components/Ourservice';
 import Why from '../components/Why';
 import Testimonials from '../components/Testimonials';
+import Packages from '../components/Packages';
 
 const Home = () => {
   useEffect(() => {
@@ -109,6 +110,8 @@ const Home = () => {
 
       {/* Our service */}
       <Ourservice data-aos="fade-right" />
+
+      <Packages data-aos="fade-right"  />
 
       {/* Why choose us */}
       <Why data-aos="fade-left" />
