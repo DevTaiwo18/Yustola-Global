@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import Slider from "react-slick"; // Import React Slick
 import "slick-carousel/slick/slick.css"; // Import Slick styles
 import "slick-carousel/slick/slick-theme.css"; // Import Slick theme
-import { FaPlane } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Use Link for navigation
 
 const Packages = () => {
   const [packages, setPackages] = useState([]);
@@ -97,14 +97,13 @@ const Packages = () => {
                   <p className="text-xs text-gray-500 mt-1">
                     Subject to availability
                   </p>
-                  <button
-                    onClick={() =>
-                      console.log(`Deleting package ${travelPackage._id}`)
-                    }
-                    className="bg-red-500 text-white px-4 py-2 rounded-full mt-4 hover:bg-red-600 transition duration-300"
-                  >
-                    Delete
-                  </button>
+                  <Link to="/contact">
+                    <button
+                      className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 hover:bg-blue-600 transition duration-300"
+                    >
+                      Book Now
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -139,14 +138,13 @@ const Packages = () => {
                 <p className="text-xs text-gray-500 mt-1">
                   Subject to availability
                 </p>
-                <button
-                  onClick={() =>
-                    console.log(`Deleting package ${travelPackage._id}`)
-                  }
-                  className="bg-red-500 text-white px-4 py-2 rounded-full mt-4 hover:bg-red-600 transition duration-300"
-                >
-                  Delete
-                </button>
+                <Link to="/contact">
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 hover:bg-blue-600 transition duration-300"
+                  >
+                    Book Now
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
