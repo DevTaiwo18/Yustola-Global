@@ -29,11 +29,11 @@ const Footer = () => {
                     <h3 className="text-lg font-semibold text-white">CONTACT US</h3>
                     <p className="text-gray-400 flex items-start text-sm leading-relaxed">
                         <GoLocation className="mr-2 mt-1 text-lg" />
-                        114 Omoola Plaza, Lekan Alabi St., Ibadan, Nigeria.
+                        No 24, Kajola Bustop, Besides Energy Filling Station, Ojoo Exp, Ibadan, Nigeria.
                     </p>
                     <p className="text-gray-400 flex items-center text-sm">
                         <FaPhoneAlt className="mr-2 text-lg" />
-                        +234 816 958 7914 | +234 816 958 7914
+                        +234 816 958 7914 | +234 818 240 6451
                     </p>
                 </div>
             </div>

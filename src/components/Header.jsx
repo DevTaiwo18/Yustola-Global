@@ -40,9 +40,9 @@ const Header = () => {
       <div className="bg-gray-900 text-white text-xs py-3 hidden lg:block">
         <div className="max-w-[85%] mx-auto flex justify-between items-center">
           <div className="flex space-x-6">
-            <span>📞 08169587914 | 08169587914</span>
+            <span>📞 08169587914 | 08182406451</span>
             <span>✉️ info@yustolaglobal.com</span>
-            <span>📍 USA | Ibadan | Akure | Oshogbo</span>
+            <span>📍  Ibadan</span>
           </div>
         </div>
       </div>
