@@ -17,7 +17,7 @@ const Footer = () => {
                         At Yustola Global, we provide top-tier travel services, specializing in visa support, flight booking, and hotel accommodations for clients worldwide.
                     </p>
                     <a
-                        href="/about"
+                        href="#"
                         className="text-red-500 font-semibold hover:text-red-400 transition-colors duration-300 text-sm underline"
                     >
                         Learn More About Us
